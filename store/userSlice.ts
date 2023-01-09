@@ -4,18 +4,23 @@ import type { RootState } from "./store";
 
 interface UserState{
 
-  name: string
+  name: string,
+  picture:string
 }
 const initialState: UserState={
-    name:"Hello World"
+    name:"",
+    picture:""
+
 }
 
 export const userSlice =createSlice({
     name:'user',
     initialState,
     reducers:{
-      addUser:(state, action:PayloadAction<string>)=>{
-        state.name = action.payload
+      addUser:(state, action:PayloadAction< {name:string,picture:string}>)=>{
+        state.name = action.payload.name
+        state.picture = action.payload.picture
+
       }
     }
 })

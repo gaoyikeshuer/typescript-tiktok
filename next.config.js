@@ -2,7 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   images:{
-    domains:['lwlies.com'],//this going to allow next.js render images
+    domains:['lwlies.com',
+    'lh3.googleusercontent.com'
+  ],//this going to allow next.js render images
   }
 }
 
