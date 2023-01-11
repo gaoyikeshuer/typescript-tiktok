@@ -11,7 +11,7 @@ export default async function handler(
     if(req.method ==='POST'){
       
         const doc=  req.body; //get the post it's our 'body'
-
+      console.log(doc)
       client.createIfNotExists(doc).then(()=> {
         res.status(200).json('Login success')
     })//creat a new user inside sanity base

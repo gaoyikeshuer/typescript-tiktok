@@ -44,7 +44,7 @@ const Navbar = () => {
             </Link>
         )}
         <button type='button' className='px-2' onClick={() => {googleLogout()
-        dispatch(addUser({name:"", picture:""}))
+        dispatch(addUser({sub:"",name:"", picture:""}))
         }}>
             <AiOutlineLogout color='red' fontSize={21}/>
 
