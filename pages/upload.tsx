@@ -41,7 +41,7 @@ const Upload = () => {
             topic:category
 
         }
-        console.log(document)
+       
         await axios.post(`${BASE_URL}/api/post`, document);
         router.push('/')
 
@@ -59,7 +59,7 @@ const Upload = () => {
 
          })
          .then((data) =>{
-            console.log(data)
+           
             setVideoAsset(data)
             setIsLoading(false)
          } )
